@@ -1,13 +1,13 @@
-import { useState, useRef } from 'react';
-import { Header, Main, Footer } from './contect'
+import { Container } from './contect'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.scss';
 function App() {
     return (
-      <>
-        <Header />
-        <Main />
-        <Footer />
-      </>
+      <BrowserRouter>
+       <Routes>
+        <Route path='/' element = {<Container />} />
+       </Routes>
+      </BrowserRouter>
     )
 }
 
