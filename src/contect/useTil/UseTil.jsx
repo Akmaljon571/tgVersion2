@@ -2,14 +2,16 @@ import { ValueContext } from '../useTil/valueContext';
 import { useContext } from "react";
 
 function useTil() {
-    const {value, setValue, id, setId, bildirish, setBildirish} = useContext(ValueContext)
+    const {value, setValue, id, setId, bildirish, setBildirish, footer,setFooter} = useContext(ValueContext)
     return {
       value,
       setValue,
       id,
       setId,
       bildirish, 
-      setBildirish
+      setBildirish,
+      footer,
+      setFooter,
     };
 }
 

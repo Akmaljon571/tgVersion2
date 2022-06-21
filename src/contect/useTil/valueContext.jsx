@@ -25,6 +25,7 @@ export const ValueProvide = ({ children }) => {
             gif: '',
         }
     },]);
+    const [footer, setFooter] = useState()
     const data = {
         value,
         setValue,
@@ -32,6 +33,8 @@ export const ValueProvide = ({ children }) => {
         setId,
         bildirish,
         setBildirish,
+        footer,
+        setFooter,
     }
 
     return(
