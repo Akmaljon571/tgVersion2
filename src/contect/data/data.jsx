@@ -1,4 +1,3 @@
-import til from '../til/til'
 import akbarjon from '../img/AkbarjonDev.jpg'
 import ali from '../img/Ali.jpg'
 import alisher from '../img/AlisherAka.jpg'
@@ -11,9 +10,10 @@ import shuhratAka from '../img/ShuhratAka.jpg'
 import uyishi from '../img/uyishi.jpg'
 import vkmBot from '../img/vkmBot.jpg'
 
-console.log(akbarjon);
+
 export default [{
     img: akbarjon,
+    id: 1,
     fname: 'Akbarjon Developer',
     padpiska: 226,
     bio: 'http://myurls.co/akbarjondev',
@@ -30,6 +30,7 @@ export default [{
 },
 {
     img: ali,
+    id: 2,
     fname: 'Ali',
     padpiska: "online",
     bio:'❤️🔐',
@@ -46,6 +47,7 @@ export default [{
 },
 {
     img: alisher,
+    id: 3,
     fname: 'Alisher Aka',
     padpiska: "online",
     bio:'TUIT',
@@ -62,6 +64,7 @@ export default [{
 },
 {
     img: jamoa,
+    id: 4,
     fname: '💻𝙳𝙰𝚂𝚃𝚄𝚁𝙲𝙷𝙸𝙻𝙰𝚁 𝙹𝙰𝙼𝙾𝙰𝚂𝙸💻',
     yol: {
         tuzilish: 'gr',
@@ -75,6 +78,7 @@ export default [{
 },
 {
     img: kursdosh,
+    id: 5,
     fname: '🇺🇿✊𝓚𝓾𝓻𝓼𝓭𝓸𝓼𝓱𝓵𝓪𝓻✊🇺🇿',
     padpiska: 16,
     yol: {
@@ -89,6 +93,7 @@ export default [{
 },
 {
     img: muslim,
+    id: 6,
     fname: 'Muslim_571',
     padpiska: "online",
     bio:"𝑺𝒊𝒛𝒏𝒊 𝒔𝒐𝒈'𝒊𝒏𝒅𝒊𝒌 𝒚𝒐 🅡🅐🅢🅤🅛🅛🅤🅛🅞🅗",
@@ -105,6 +110,7 @@ export default [{
 },
 {
     img: opacham,
+    id: 7,
     fname: 'Maxbuba opacham',
     padpiska: "online",
     bio:"💏Yaqinlarimning sog'ligi mani baxtim👪",
@@ -121,6 +127,7 @@ export default [{
 },
 {
     img: shahboz,
+    id: 8,
     fname: 'Shahboz Jgar',
     padpiska: "online",
     bio:"",
@@ -137,6 +144,7 @@ export default [{
 },
 {
     img: shuhratAka,
+    id: 9,
     fname: 'Shukhratbek Kobulov',
     padpiska: "online",
     bio:"Software Engineer | Blog: @shuhratbeks_blog",
@@ -153,6 +161,7 @@ export default [{
 },
 {
     img: uyishi,
+    id: 10,
     fname: 'Uy_ishi_N29',
     padpiska: 17,
     yol: {
@@ -167,6 +176,7 @@ export default [{
 },
 {
     img: vkmBot,
+    id: 11,
     fname: 'VK Music Bot',
     padpiska: 226,
     bio: 'Listen to and download any music! ',

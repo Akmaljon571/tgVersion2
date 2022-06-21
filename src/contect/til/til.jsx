@@ -1,11 +1,14 @@
 export default {
-    uz: {
-       online: 'tarmoqda',
-    },
-    en: {
-       online: 'online',
-    },
-    ru: {
-       online: 'в сети',
-    },
+   uz: {
+      online: 'tarmoqda',
+      plasholder: 'Qidiruv',
+   },
+   ru: {
+      online: 'в сети',
+      plasholder: 'Поиск'
+   },
+   en: {
+      online: 'online',
+      plasholder: 'Search'
+   },
 }
