@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect, useContext } from 'react'
 import  useTil  from '../useTil/UseTil'
 import til from '../til/til'
+import './navbar.scss'
 
 function Navbar() {
   //input value ozgarishi uchun state

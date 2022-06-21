@@ -1,0 +1,119 @@
+
+.Navbar{
+    width: 450px;   
+    background-color: #17212b;
+    height: 100%;
+    border-right: 3px solid #161e29;
+}
+
+.Navbar_Nav{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+  }
+  
+  /* Icon 1 */
+  
+  #nav-icon1 {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 10px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 1.9px;
+    width: 18px;
+    background-color: #434f5d;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon1 span:nth-child(1) {
+    top: 0px;
+    width: 12px;
+  }
+  
+  #nav-icon1 span:nth-child(2) {
+    top: 5px;
+  }
+  
+  #nav-icon1 span:nth-child(3) {
+    top: 10px;
+  }
+  
+  .Navbar_belgi{
+     background-color: #3f7cb1;
+     width: 6px;
+     height: 6px;
+     border-radius: 50%;
+     position: absolute;
+     margin-bottom: 7px;
+     margin-left: 14px;
+  }
+
+  .Navbar_Input{
+    width: 100%;
+    margin-left: 22px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #232f3d;
+    border: none;
+    padding: 18px;
+    color: #adabd0;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;    
+  }
+
+  .Navbar_X{
+    color: #232f3e;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 5px;
+  }
+
+  .Navbar_XX{
+    color: #434f5d;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 5px;
+  }
+
+  .Navbar_Input:focus {
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+  }
+  

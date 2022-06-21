@@ -1,19 +1,29 @@
 import { useState } from 'react'
 import datas from '../data/data'
+import useTil from '../useTil/UseTil';
 import './list.scss'
 
  
 
 function List() {
     const [check, setCheck] = useState(false);
+    const { bildirish, setBildirish } = useTil()
     let Person = () =>{
        return (<i className="bi person bi-person"></i>)
+    }
+
+    let keylink = (fName) => {
+        datas.filter((key) =>{
+            if (key.fname == fName) {
+                setBildirish([key])
+            }
+        })
     }
 
     return ( 
        <ul className="list">
         {datas.map((key) =>(
-            <li key={key.id} className="list_item">
+            <li onClick={() => keylink(key.fname)} key={key.id} className="list_item">
 
                 {/* img */}
                 <img className='list_img' src={key.img} width = "45" alt="img" />

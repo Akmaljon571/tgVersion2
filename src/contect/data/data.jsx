@@ -11,6 +11,7 @@ import uyishi from '../img/uyishi.jpg'
 import vkmBot from '../img/vkmBot.jpg'
 
 
+
 export default [{
     img: akbarjon,
     id: 1,
@@ -32,7 +33,7 @@ export default [{
     img: ali,
     id: 2,
     fname: 'Ali',
-    padpiska: "online",
+    padpiska: 'online',
     bio:'❤️🔐',
     silka: '@a1i5909',
     yol: {
@@ -49,7 +50,7 @@ export default [{
     img: alisher,
     id: 3,
     fname: 'Alisher Aka',
-    padpiska: "online",
+    padpiska: 'online',
     bio:'TUIT',
     silka: '@Mathias_Normann',
     yol: {
@@ -66,6 +67,7 @@ export default [{
     img: jamoa,
     id: 4,
     fname: '💻𝙳𝙰𝚂𝚃𝚄𝚁𝙲𝙷𝙸𝙻𝙰𝚁 𝙹𝙰𝙼𝙾𝙰𝚂𝙸💻',
+    padpiska: 16,
     yol: {
         tuzilish: 'gr',
         foto: 93,
@@ -80,7 +82,7 @@ export default [{
     img: kursdosh,
     id: 5,
     fname: '🇺🇿✊𝓚𝓾𝓻𝓼𝓭𝓸𝓼𝓱𝓵𝓪𝓻✊🇺🇿',
-    padpiska: 16,
+    padpiska: 26,
     yol: {
         tuzilish: 'gr',
         foto: 38,
@@ -95,7 +97,7 @@ export default [{
     img: muslim,
     id: 6,
     fname: 'Muslim_571',
-    padpiska: "online",
+    padpiska: 'online',
     bio:"𝑺𝒊𝒛𝒏𝒊 𝒔𝒐𝒈'𝒊𝒏𝒅𝒊𝒌 𝒚𝒐 🅡🅐🅢🅤🅛🅛🅤🅛🅞🅗",
     silka: '@Rasulim571sav',
     yol: {
@@ -112,7 +114,7 @@ export default [{
     img: opacham,
     id: 7,
     fname: 'Maxbuba opacham',
-    padpiska: "online",
+    padpiska: 'online',
     bio:"💏Yaqinlarimning sog'ligi mani baxtim👪",
     silka: '',
     yol: {
@@ -129,7 +131,7 @@ export default [{
     img: shahboz,
     id: 8,
     fname: 'Shahboz Jgar',
-    padpiska: "online",
+    padpiska: 'online',
     bio:"",
     silka: '',
     yol: {
@@ -146,7 +148,7 @@ export default [{
     img: shuhratAka,
     id: 9,
     fname: 'Shukhratbek Kobulov',
-    padpiska: "online",
+    padpiska: 'online',
     bio:"Software Engineer | Blog: @shuhratbeks_blog",
     silka: '@mrshukhratbek',
     yol: {

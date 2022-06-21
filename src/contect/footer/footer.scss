@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12.5px;
+    background-color: #17212b;
+    height: auto;
+
+    &_inp_otas{
+        display: flex;
+        align-items: center;
+    }
+
+    &_img_svg{
+        margin-right: 20px;
+    }
+
+    &_input{
+        width: 500px;
+        height: auto;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: White;
+    }
+}
+
+.svg_footer_otas{
+    display: flex;
+    align-items: center;
+    width: 70px;
+    color: darkgrey;
+    justify-content: space-between;
+}

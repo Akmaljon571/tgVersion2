@@ -6,8 +6,8 @@ const Container = () =>{
     return (
         <div className="container">
             <Header/>
-            {/* <Main />
-            <Footer /> */}
+            <Main />
+            {/* <Footer /> */}
         </div>
     )
 }

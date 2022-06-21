@@ -1,0 +1,57 @@
+.Nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #232f3d;
+}
+
+.svg1{
+    color: #434f5d;
+    cursor: pointer;
+    margin-top: 5px;
+    box-sizing: content-box;
+    padding-top: 1px;
+    margin-top: -5px;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+.svg2{
+    color: #434f5d;
+    cursor: pointer;
+    box-sizing: content-box;
+    padding-top: 1px;
+    margin-top: -5px;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+}
+
+svg{
+    color: #434f5d;
+}
+
+.svg3{
+    color: #434f5d;
+    cursor: pointer;
+    box-sizing: content-box;
+    padding-top: 1px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.svg1:hover{
+    background-color: #17212b;
+}
+
+.svg2:hover{
+    background-color: #17212b;
+}
+
+.svg3:hover{
+    background-color: #17212b;
+}

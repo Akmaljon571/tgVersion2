@@ -1,7 +1,7 @@
-import Nav from './nav'
+import Nav from '../Nav/nav'
 import List from '../list/list'
 import useTil from '../useTil/UseTil'
-import Navbar from './navbar';
+import Navbar from '../navbar/navbar';
 function Header() {
     const { value, setValue } = useTil()
 
@@ -15,11 +15,6 @@ function Header() {
             <Nav />
             <Navbar />
             <List />
-            <select onChange={onValue} defaultValue = {value}>
-              <option value="uz">Uz</option>
-              <option value="ru">Ru</option>
-              <option value="en">Eng</option>
-            </select>
         </header>
     )
 }
