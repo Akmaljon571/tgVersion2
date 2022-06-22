@@ -6,8 +6,8 @@ import './list.scss'
  
 
 function List() {
-    const [check, setCheck] = useState(false);
-    const { bildirish, setBildirish } = useTil()
+ 
+    const { bildirish, setBildirish, check } = useTil()
     let Person = () =>{
        return (<i className="bi person bi-person"></i>)
     }
@@ -19,7 +19,6 @@ function List() {
             }
         })
     }
-
     return ( 
        <ul className="list">
         {datas.map((key) =>(

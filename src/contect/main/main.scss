@@ -2,7 +2,7 @@
     background-image: url(../img/dark_bgc.jpg);
     float: right;
     width: 1085.5px;
-    height: 682px;
+    height: 681px;
     margin-top: -71px;
 
     &_header{
@@ -47,10 +47,12 @@
 
 }
 
-.section{
-   width: 100%;
-   height: 575.5px;
-}
+@media only screen and (min-width: px){
+
+} 
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import prof from '../img/save.jpg'
 
 
@@ -7,10 +7,10 @@ export const ValueContext = createContext();
 
 export const ValueProvide = ({ children }) => {
     const [value, setValue] = useState(JSON.parse(localStorage.getItem('til'))||'uz');
-    const [id, setId] = useState(1);
+    const [id, setId] = useState(false);
     const [bildirish, setBildirish] = useState([{
         img: prof,
-        id: 6,
+        id: 1,
         fname: 'Muslim_571',
         padpiska: "online",
         bio:"𝑺𝒊𝒛𝒏𝒊 𝒔𝒐𝒈'𝒊𝒏𝒅𝒊𝒌 𝒚𝒐 🅡🅐🅢🅤🅛🅛🅤🅛🅞🅗",
@@ -25,7 +25,10 @@ export const ValueProvide = ({ children }) => {
             gif: '',
         }
     },]);
-    const [footer, setFooter] = useState()
+    const [bool, setBool] = useState(false);
+    const [check, setCheck] = useState(false);
+    const [footer, setFooter] = useState([])
+    const [kor, setKor] = useState([]);
     const data = {
         value,
         setValue,
@@ -35,6 +38,12 @@ export const ValueProvide = ({ children }) => {
         setBildirish,
         footer,
         setFooter,
+        check,
+        setCheck,
+        kor, 
+        setKor,
+        bool,
+        setBool,
     }
 
     return(
