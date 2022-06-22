@@ -1,9 +1,8 @@
 .main{
     background-image: url(../img/dark_bgc.jpg);
     float: right;
-    width: 1085.5px;
-    height: 681px;
-    margin-top: -71px;
+    width: 1086.5px;
+    height: 682px;
 
     &_header{
         display: flex;
@@ -47,9 +46,22 @@
 
 }
 
-@media only screen and (min-width: px){
-
-} 
+// @media only screen and(max-width:1536px) {
+// //    .main{
+// //     width: 1084.5px;
+// //    }
+// } 
+// @media only screen and(max-width:1535px) {
+//    .main{
+//     width: 1084px;
+//     height: 10px;
+//    }
+// } 
+// @media only screen and(max-width:1530px) {
+//    .main{
+//     width: 1080.5px;
+//    }
+// } 
 
 
 

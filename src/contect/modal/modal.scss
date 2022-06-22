@@ -1,0 +1,65 @@
+.saveSpan{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.518);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .save{
+        position: relative; 
+        margin: 0;
+        padding: 10px;
+        width: 400px;
+        background-color: #17212b;
+        text-align: center;
+        padding-top: 30px;
+        border-radius: 8px;
+
+        &_btnOtasi{
+            position: absolute;
+            right: 45px;
+            top: 35px;
+            padding: 4px 8px;
+            background-color: rgba(0, 0, 0, 0.527);
+            border-radius: 5px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &, svg{
+                color: #fff;
+            }
+
+        }
+        
+        &_img_o{
+            width: 320px;
+            height: 250px;
+            text-align: center;  
+            margin: 0 auto; 
+            background-color: #232f3d;
+        }
+
+        // &_img_user{
+        //     margin-left: -10px;
+        // }
+
+
+
+
+
+
+
+
+        &_p {
+            overflow-wrap: break-word;
+            width: 350px;
+            text-align: left;
+        }
+    }
+}

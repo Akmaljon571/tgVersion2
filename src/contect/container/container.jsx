@@ -1,12 +1,15 @@
 import './container.scss'
-import { Header, Main, Footer } from '../index'
+import { Header, Main, Nav } from '../index'
 
 
 const Container = () =>{
     return (
         <div className="container">
-            <Header/>
-            <Main />
+            <Nav />
+            <div className="big">
+                <Header/>
+                <Main />
+            </div>
             {/* <Footer /> */}
         </div>
     )

@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import data from '../data/data'
 import useInput from '../dataInput/UseInput'
 import til from '../til/til'
@@ -7,7 +7,7 @@ import './footer.scss'
 
 function Footer() {
     // til ozgartiruvchi value
-    const { bildirish, value, id,  } = useTil()
+    const { bildirish, value, id, bool, setBool } = useTil()
     const { id1, setid1, id2, setid2, id3, setid3, id4, setid4, id5, setid5, id6, setid6, id7,  setid7, id8,  setid8, id9,  setid9,id10, setid10 } = useInput()
     localStorage.setItem('id1', JSON.stringify(id1));
     localStorage.setItem('id2', JSON.stringify(id2));
@@ -21,6 +21,7 @@ function Footer() {
     localStorage.setItem('id10', JSON.stringify(id10));
     //input valuesi uchun Ref
     const shef = useRef()
+    const image = useRef()
 
     // footer input submit
     let inputSubmit = (evt) => {
@@ -81,6 +82,41 @@ function Footer() {
     
     }
 
+    let saveInput = () => {
+        if (image.current.files[0] == '') return
+        let InpObjId = bildirish.map((key) => key.id)
+        let vaqt = new Date().getHours()
+        let minut = new Date().getMinutes()
+        if (vaqt < 10) {
+            vaqt = `0${vaqt}`
+         } 
+         if (minut < 10) {
+            minut = `0${minut}`
+        }
+        let qasa = `${vaqt}:${minut}`
+ 
+        setTimeout(() => {
+         let newObj = {
+         key1: InpObjId.join(''),
+         data: qasa,
+         id: new Date().getTime(),
+         text: image.current.files[0],
+         belgi: id,
+         jonatishi: true,
+         boolean: true
+         }
+         setBool([newObj])
+        }, 5000);
+    }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,12 +125,12 @@ function Footer() {
     return (
        <footer className="footer">
          <div className="footer_inp_otas">
-         <label htmlFor="rasm">
+         <label onClick={saveInput} htmlFor="rasm">
          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="footer_img_svg bi bi-image" viewBox="0 0 16 16">
             <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
             <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
         </svg>
-        <input type="file" className='none' id='rasm' name='rasm' />
+        <input ref={image} type="file" className='none' id='rasm' name='rasm' />
          </label>
         <form onSubmit={inputSubmit}>
             <input ref={shef} type="text" className="footer_input" placeholder={til[value].inp} />

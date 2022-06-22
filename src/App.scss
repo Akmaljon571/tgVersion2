@@ -3,6 +3,10 @@
 @import '../src/contect/scss/var.scss';
 
 
+svg{
+  color: #999;
+}
+
 svg:hover{
     color: #fff;
     cursor: pointer;

@@ -3,10 +3,11 @@ import UseInput from '../dataInput/UseInput';
 import UseTil from '../useTil/UseTil';
 import { useEffect, useState } from 'react';
 import './section.scss'
+import ModalImage from '../modal/modal';
 
 function section() {
     const { id1, id2, id3, id4, id5, id6, id7, id8, id9, id10  } = UseInput()
-    const { bildirish, check, setCheck, id, setId, kor, setKor } = UseTil()
+    const { bildirish, check, setCheck, id, setId, kor, setKor, bool } = UseTil()
     let Map = []
 
     const objId = bildirish.map((item) => item.id)
@@ -22,7 +23,6 @@ function section() {
     const newId10 = id10.map((item) => item.key1)
     if (objId == newId1[1] ) {
         Map = id1
-        console.log(Map);
     } else if (objId == newId2[1]) {
         Map = id2
     } else if (objId == newId3[1]) {
@@ -48,7 +48,8 @@ function section() {
 
     return (
         <div className="section">
-            { Map.map((key) => (
+            {bool == '' || bool == undefined ? '' : <ModalImage />}
+            {Map.map((key) => (
                 <div className='section_ota' key={key.id}>
                     <p className={key.text.length >= 60 ? 'section_p' : 'p_section'}>{key.text}</p>
                     <span className='data_section'>{key.data}</span>
@@ -63,7 +64,6 @@ function section() {
                     </span> 
                 </div> 
             ))}
-             <span className='Ortadagi_soat'>{ JSON.parse(localStorage.getItem('soat'))  }</span>
         </div>
      );
 }

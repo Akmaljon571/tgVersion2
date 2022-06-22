@@ -25,7 +25,8 @@ export const ValueProvide = ({ children }) => {
             gif: '',
         }
     },]);
-    const [bool, setBool] = useState(false);
+    const [bool, setBool] = useState('');
+    const [bool1, setBool1] = useState(false);
     const [check, setCheck] = useState(false);
     const [footer, setFooter] = useState([])
     const [kor, setKor] = useState([]);
@@ -44,6 +45,8 @@ export const ValueProvide = ({ children }) => {
         setKor,
         bool,
         setBool,
+        bool1,
+        setBool1,
     }
 
     return(

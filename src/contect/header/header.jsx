@@ -1,4 +1,3 @@
-import Nav from '../Nav/nav'
 import List from '../list/list'
 import useTil from '../useTil/UseTil'
 import Navbar from '../navbar/navbar';
@@ -12,7 +11,6 @@ function Header() {
     }
     return (
         <header className="header">
-            <Nav />
             <Navbar />
             <List />
         </header>
